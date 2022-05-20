@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Mes Competences</string>
+    <string name="main_app_title">Mes compétences</string>
+
+    <!-- Home Page -->
+    <string name="home_page_title">Ma Liste de compétences</string>
+
+    <!-- Popup detail-->
+    <string name="popup_detail_description">Description</string>
+    <string name="popup_detail_tags">Tags</string>
+    <string name="popup_detail_level">Niveau</string>
+
+    <!-- Nouvelle competence-->
+    <string name="new_comp_page_title">Nouvelle compétences</string>
+
+    <!-- Statistics -->
+    <string name="statistics_page_title">Mes Statistiques</string>
+    <!-- Nouvelle competence/Form-->
+    <string name="new_comp_form_name_placeholder">Nom de la compétence</string>
+    <string name="new_comp_form_description_placeholder">Descritpion</string>
+    <string name="new_comp_form_tags_placeholder">Tags</string>
+    <string name="new_comp_form_submit_button">Ajouter</string>
+    <string name="top_competence">Top compétence :</string>
+    <string name="last_competence">Dernière compétence :</string>
+    <string name="total_lvl">Niveau Total</string>
+    <string name="libelle_tags">Tags</string>
+
+</resources>

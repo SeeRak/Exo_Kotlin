@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/default_margin"
+    >
+
+    <TextView
+        android:id="@+id/competence_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNDEFINED"
+        android:textAlignment="center"
+        style="@style/PopupTitleStyle"
+        android:textColor="@color/orange"/>
+
+
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_detail_description"
+        style="@style/RegularTitleStyle"
+        android:textColor="@color/orange"/>
+
+
+    <TextView
+        android:id="@+id/description_field"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/orange"/>
+
+    <TextView
+        android:id="@+id/tags_label"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegularTitleStyle"
+        android:textColor="@color/orange"
+        android:text="@string/libelle_tags" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tags_recyler"
+        style="@style/RegularTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <TextView
+        android:id="@+id/niveau_label"
+        android:textColor="@color/orange"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegularTitleStyle"
+        android:text="@string/popup_detail_level" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_level_down"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:padding="@dimen/default_margin"
+            android:src="@drawable/ic_less"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/niveau_field"
+            android:textColor="@color/orange"
+            android:layout_margin="@dimen/default_margin"
+            style="@style/BasicTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_level_up"
+            app:layout_constraintStart_toEndOf="@+id/btn_level_down"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_level_up"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:padding="@dimen/default_margin"
+            android:src="@drawable/ic_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_delete_comp"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer" />
+
+
+
+</LinearLayout>
